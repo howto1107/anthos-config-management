@@ -1,8 +1,7 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sNoExternalServices
 metadata:
- name: no-internet-services
- group: configmanagement.gke.io  
+  name: no-internet-services
 spec:
   parameters:
    internalCIDRs: [] 
