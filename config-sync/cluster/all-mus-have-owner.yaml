@@ -1,16 +1,16 @@
-apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: K8sRequiredLabels
-metadata:
-  name: all-must-have-owner
-spec:
-  match:
-    kinds:
-    - apiGroups:
-      - ""
-      kinds:
-      - Namespace
-  parameters:
-    labels:
-    - allowedRegex: ^[a-zA-Z]+.haymard.demo$
-      key: owner
-    message: All namespaces must have an `owner` label that points to your company  username
+#apiVersion: constraints.gatekeeper.sh/v1beta1
+#kind: K8sRequiredLabels
+#metadata:
+#  name: all-must-have-owner
+#spec:
+#  match:
+#    kinds:
+#    - apiGroups:
+#      - ""
+#      kinds:
+#      - Namespace
+#  parameters:
+#    labels:
+#    - allowedRegex: ^[a-zA-Z]+.haymard.demo$
+#      key: owner
+#    message: All namespaces must have an `owner` label that points to your company  username
